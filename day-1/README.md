@@ -1,6 +1,19 @@
-# HTML Guide — Frequently Used Tags & Attributes
+ # Day 1 — HTML & Web Fundamentals
 
-This guide provides a concise, practical reference to frequently used HTML tags, common attributes, and examples. It's intended for beginners through intermediate web developers who want a single-file cheat sheet.
+Welcome to Day 1 of the web development bootcamp! Today, we'll cover the fundamentals of HTML and how the web works. This guide provides a quick reference to essential HTML elements, attributes, and best practices.
+
+ ## Key Concepts
+
+ - Internet vs World Wide Web: The Internet is the global network infrastructure; the Web (WWW) is a service running on it that provides linked documents and resources.
+ - Client & Server: The client (usually a browser) sends requests; the server receives requests and returns responses.
+ - Common HTTP verbs:
+   - `GET`: retrieve a resource
+   - `POST`: create a new resource
+   - `PUT`: replace an entire resource
+   - `PATCH`: update part of a resource
+   - `DELETE`: remove a resource
+
+
 
 ## Quick Document Skeleton
 
