@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greet To Console</title>
+</head>
+<body>
+    <input type="text" name="name" id="name" placeholder="Enter your name">
+    <div id="output"></div>
+
+    <button onclick="greetUser()">Greet Me</button>
+    <script>
+        function greetUser() {
+            const nameInput = document.getElementById('name');
+            const name = nameInput.value;
+            console.log(`Hello, ${name}! Welcome to our website.`);
+            const outputDiv = document.getElementById('output');
+            outputDiv.textContent = `Hello, ${name}! Welcome to our website.`;
+        }
+    </script>
+</body>
+</html>
