@@ -20,33 +20,23 @@
                 const li = document.createElement("li")
                 chkbox = document.createElement("input")
                 chkbox.type = "checkbox"
-
                 li.appendChild(chkbox)
                 li.append(task)
                 chkbox.addEventListener("change",function () {
                     if(chkbox.checked)
-                {
-                    li.style.color = "gray"
-                    li.style.textDecoration = "line-through"
-                }
-                else{
-                    li.style.textDecoration = ""
-                    li.style.color = "black"
-                }
+                    {
+                        li.style.color = "gray"
+                        li.style.textDecoration = "line-through"
+                    }
+                    else{
+                        li.style.textDecoration = ""
+                        li.style.color = "black"
+                    }
                 })
-
                 ul = document.getElementsByTagName("ul")
-            
                 ul[0].appendChild(li)
                 taskInput.value = ""
             }
-
-            
-            
-
-            
-
-
         }
     </script>
 </body>
