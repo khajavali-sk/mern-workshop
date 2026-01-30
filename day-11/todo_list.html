@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+</head>
+<body>
+    <label for="task">Enter your task: </label>
+    <input type="text" id="task">
+    <br>
+    <button onclick="addTask()">Add Task</button>
+    <ul></ul>
+
+    <script>
+        function addTask(){
+            taskInput = document.getElementById("task")
+            task = taskInput.value
+            if(task !== ""){
+                 li = document.createElement("li")
+                li.innerText = task
+                ul = document.getElementsByTagName("ul")
+                ul[0].appendChild(li)
+                taskInput.value = ""
+            }
+            
+
+            
+
+
+        }
+    </script>
+</body>
+</html>
