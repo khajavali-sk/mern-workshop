@@ -75,6 +75,7 @@ stu2 = stu1
 stu2.name = "xyz"
 
 console.log("student 1:"+JSON.stringify(stu1));
+console.log(`student 1:${JSON.stringify(stu1)}`);   
 console.log("student 2:"+JSON.stringify(stu2));
 
 

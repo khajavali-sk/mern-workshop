@@ -1,5 +1,5 @@
 class Person{
-    name = ""
+    sname = ""
     age = ""
     ph_no = ""
 
@@ -23,6 +23,12 @@ class Person{
 
 class Student extends Person{
     reg_no = ""
+    #marks  = {
+        maths: 90,
+        sci: 80,
+        bio: 98
+    }
+
     constructor(name, age, ph_no, reg_no){
         super(name, age, ph_no)
         this.reg_no = reg_no
@@ -30,12 +36,23 @@ class Student extends Person{
 
     getDetails(){
         return {
-            sname: this.name,
-            age: this.age,
-            ph_no: this.ph_no,
-            reg_no: this.reg_no
+          reg_no: this.reg_no
         }
     }
+
+    getMarks(){
+        return this.#marks
+    }
+
+    get stuName(){
+        return this.name
+    }
+
+    set stuName(name){
+        this.name = name
+        console.log(`name updated to: ${this.name}`)
+    }
+    
 }
 
 // person1 = new Person("k",20)
@@ -46,8 +63,21 @@ class Student extends Person{
 
 //student
 
-student1 = new Student("k",20,987654321,"xyzreg_no")
-console.log(student1)
-student_details = student1.getDetails()
-console.log(student_details)
+const student1 = new Student("k",20,987654321,"xyzreg_no")
+console.log({...student1})
+console.log(student1.getDetails())
+console.log(student1.getMarks());
+
+
+
+
+
+// const {sname,ph_no} = student1.getDetails()
+// console.log(sname, ph_no);
+// console.log(...student1);
+// console.log({...student1});
+// console.log(student1.getMarks());
+console.log(student1.stuName);
+student1.stuName = "Khajavali"
+
 
